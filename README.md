@@ -27,14 +27,8 @@
 * Add the `.env` file and `.npmrc` file . 
 
 ## Execution Commands : 
-`npx codeceptjs run --steps --plugins allure`
->  Used to run the test cases in **sequence**
+`runTest.sh`
+>  Used to run the single test case at a time.
 
-`npx codeceptjs run-multiple --steps --all --plugins allure`
->  Used to run the test cases in **parallel **
-
-` allure serve output/allure-results`
->Used to create an **allure report** in Temp Directory 
-
-`rm -r output`
->Used to remove **output** directory
+`runParallel.sh`
+>  Used to run the multiple test cases in **parallel **

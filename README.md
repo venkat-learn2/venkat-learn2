@@ -23,9 +23,7 @@
 * Delete the file ./steps.d.ts (if present)
 * Use the following npm command to install the dependency 
 	> #### npm install 
-* Configure , **intelli-sense** for type script methods by using the command 
-	 >#### npx codeceptjs def 
-			 After successful execution of command - a new file steps.d.ts should be created with an interface "Method" which extends TestCafe and Assert Wrapper.
+
 
 * Replace the contents in directory `./node_modules/codeceptjs/ ` with the [this codecept js contents](https://lumeltech-my.sharepoint.com/:f:/g/personal/sabareeshr_lumel_com/EjRNN5-xBMRJpMhcx0wsrPsBtOJSjJsjsSdHnmwSmCwKKQ?e=NA6X7L)
 * Add the `.env` file and `.npmrc` file . 

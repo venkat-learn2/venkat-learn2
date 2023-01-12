@@ -1,7 +1,7 @@
 # Codecept JS - Playwright helper Framework 
 
 ## Important Links : 
-[Framework Documentation Link]( https://playwright.dev/docs/intro)
+[Framework Documentation Link](https://codecept.io/helpers/Playwright/)
 
 ## Framework Details : 
 1. Framework Used : Codecept JS

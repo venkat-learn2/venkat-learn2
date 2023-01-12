@@ -24,8 +24,6 @@
 * Use the following npm command to install the dependency 
 	> #### npm install 
 
-
-* Replace the contents in directory `./node_modules/codeceptjs/ ` with the [this codecept js contents](https://lumeltech-my.sharepoint.com/:f:/g/personal/sabareeshr_lumel_com/EjRNN5-xBMRJpMhcx0wsrPsBtOJSjJsjsSdHnmwSmCwKKQ?e=NA6X7L)
 * Add the `.env` file and `.npmrc` file . 
 
 ## Execution Commands : 

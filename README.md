@@ -35,30 +35,29 @@
 
 ## codeceptjs.config.js :
 
-you can set the headless mode here
+* you can set the headless mode here
 `const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
 
-if you want to run all test cases from the folder and file name start with
-
-code example:
+* if you want to run all test cases from the folder and file name start with
+**code example:**
 
 `exports.config = {
   tests: 'Tests/ColumnFilter/COLFIL*.js'
  }`
  
-here * will be executed all the files starts with COLFIL
+**note** :here * will be executed all the files starts with COLFIL
 
-if you want to run single test cases from the folder and file name:
+* if you want to run single test cases from the folder and file name:
 
-code example:
+**code example:**
 
 `exports.config = {
   tests: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'
  }`
 
-if you want change the chunks:
+* if you want change the chunks:
 
-code example:
+**code example:**
 
 `exports.config = {
   tests: 'Tests/ColumnFilter/COLFIL*.js',
@@ -69,14 +68,15 @@ code example:
     }
   }`
 
-we had set the tag name in our scenario we can also run using the tag name 
-example code :
+* we had set the tag name in our scenario we can also run using the tag name 
+**example code :**
 
-`  Scenario('FIL_114_Filter_Verify_Filter_Notes_Applied', async ({ I }) => {
+`  Scenario('ExampleCase', async ({ I }) => {
    await I.click('//div[@id='example']')
 }).tag('@example')`
 
 one test case :
 `codeceptjs run --grep '@example'`
+
 multiple test cases:
 `codeceptjs run-multiple --grep '@example'`

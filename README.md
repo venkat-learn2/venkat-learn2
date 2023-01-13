@@ -67,23 +67,17 @@ exports.config = {
 
 **1.Execute all the test cases**
 
-Example:
-
-`TESTNAME : 'Tests/ColumnFilter/*.js'`
+Example: `TESTNAME : 'Tests/ColumnFilter/*.js'`
 
 **note** :here * will be executed all the test cases inside the folder
 
 **2.Execute all the test cases from the folder and file name start with**
 
-Example:
-
-`TESTNAME : 'Tests/ColumnFilter/COLFIL*.js'`
+Example: `TESTNAME : 'Tests/ColumnFilter/COLFIL*.js'`
 
 **3.Execute single test cases**
 
- Example:
-
-`TESTNAME: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'`
+ Example: `TESTNAME: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'`
 
 **4.All cases with the mentioned tag should be executed**
 
@@ -95,8 +89,6 @@ Example:
    await I.click('//div[@id='example']')
 }).tag('@example')`
 
-one test case :
-`codeceptjs run --grep '@example'`
+one test case : `codeceptjs run --grep '@example'`
 
-multiple test cases:
-`codeceptjs run-multiple --grep '@example'`
+multiple test cases: `codeceptjs run-multiple --grep '@example'`

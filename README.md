@@ -68,3 +68,15 @@ code example:
       browsers: ['chromium']
     }
   }`
+
+we had set the tag name in our scenario we can also run using the tag name 
+example code :
+
+`  Scenario('FIL_114_Filter_Verify_Filter_Notes_Applied', async ({ I }) => {
+   await I.click('//div[@id='example']')
+}).tag('@example')`
+
+one test case :
+`codeceptjs run --grep '@example'`
+multiple test cases:
+`codeceptjs run-multiple --grep '@example'`

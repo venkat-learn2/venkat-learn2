@@ -47,14 +47,14 @@ Refer the Image
 
 Example:
 
-`exports.config = {
+exports.config = {
   tests: process.env.TESTNAME,
   multiple: {
     parallel: {
       **chunks: 2**,
       browsers: ['chromium']
     }
-  }`
+  }
   
 ## Execution Commands : 
 `runTest.sh`

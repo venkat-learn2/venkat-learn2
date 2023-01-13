@@ -25,6 +25,12 @@
 	> #### npm install 
 
 * Add the `.env` file
+
+## codeceptjs.config.js :
+
+* you can set the headless mode here
+`const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
+
 ## Execution Commands : 
 `runTest.sh`
 >  Used to run the single test case at a time.
@@ -32,10 +38,6 @@
 `runParallel.sh`
 >  Used to run the multiple test cases in **parallel**
 
-## codeceptjs.config.js :
-
-* you can set the headless mode here
-`const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
 
 * if you want to run all test cases from the folder and file name start with
 **code example:**

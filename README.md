@@ -23,7 +23,8 @@ After installed the nodejs and Java JDK , set the enviroment variable.
 **step 1 :**
  View advanced System -> Environment Variable -> Edit 
  
-**step 2 :**
+**step 2 :** 
+Refer the Image
 ![image](https://user-images.githubusercontent.com/118034060/212262600-6e895142-068b-4bf2-8148-baef3c89d1d1.png)
 
 

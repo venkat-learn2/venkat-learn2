@@ -18,6 +18,15 @@
 1. Node JS - Version 14.15.4 - [Download Here](https://lumeltech-my.sharepoint.com/:u:/g/personal/sabareeshr_lumel_com/EcjYqUpf54NNiz1oR3OltdoBDdJUEBQTQxtE8p2ntL2pTA?e=MacduD)
 2. Java JDK (Preferably > 1.8 ) version 
 
+After installed the nodejs and Java JDK , set the enviroment variable.
+
+**step 1 :**
+ View advanced System -> Environment Variable -> Edit 
+ 
+**step 2 :**
+![image](https://user-images.githubusercontent.com/118034060/212262600-6e895142-068b-4bf2-8148-baef3c89d1d1.png)
+
+
 ### Steps to setup 
 * Install the required dependency in the machine and set the environment path for the Java and Node JS . 
 * Clone the framework from the Git-Repo. 
@@ -32,6 +41,19 @@
 * you can set the headless mode here
 `const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
 
+* if you want change number of the chunks:
+
+**code example:**
+
+`exports.config = {
+  tests: process.env.TESTNAME,
+  multiple: {
+    parallel: {
+      chunks: 2,
+      browsers: ['chromium']
+    }
+  }`
+  
 ## Execution Commands : 
 `runTest.sh`
 >  Used to run the single test case at a time.
@@ -39,14 +61,13 @@
 `runParallel.sh`
 >  Used to run the multiple test cases in **parallel**
 
+**edit .env file as per your needs**
 
 * if you want to run all test cases from the folder and file name start with
 
 **code example:**
 
-`exports.config = {
-  tests: 'Tests/ColumnFilter/COLFIL*.js'
- }`
+`TESTNAME : 'Tests/ColumnFilter/COLFIL*.js'`
  
 **note** :here * will be executed all the files starts with COLFIL
 
@@ -54,22 +75,7 @@
 
 **code example:**
 
-`exports.config = {
-  tests: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'
- }`
-
-* if you want change the chunks:
-
-**code example:**
-
-`exports.config = {
-  tests: 'Tests/ColumnFilter/COLFIL*.js',
-  multiple: {
-    parallel: {
-      chunks: 2,
-      browsers: ['chromium']
-    }
-  }`
+`TESTNAME: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'`
 
 * we had set the tag name in our scenario we can also run using the tag name 
 

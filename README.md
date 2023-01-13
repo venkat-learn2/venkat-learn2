@@ -17,6 +17,7 @@
 ### Required Dependencies : 
 1. Node JS - Version 14.15.4 - [Download Here](https://lumeltech-my.sharepoint.com/:u:/g/personal/sabareeshr_lumel_com/EcjYqUpf54NNiz1oR3OltdoBDdJUEBQTQxtE8p2ntL2pTA?e=MacduD)
 2. Java JDK (Preferably > 1.8 ) version 
+3. Allure
 
 After installed the nodejs and Java JDK , set the enviroment variable.
 
@@ -25,7 +26,7 @@ After installed the nodejs and Java JDK , set the enviroment variable.
  
 **step 2 :** 
 Refer the Image
-![image](https://user-images.githubusercontent.com/118034060/212262600-6e895142-068b-4bf2-8148-baef3c89d1d1.png)
+![envVar](https://user-images.githubusercontent.com/118034060/212315508-7492a94e-e1da-4a3c-8a53-17f9397c2dff.png)
 
 
 ### Steps to setup 
@@ -35,7 +36,7 @@ Refer the Image
 * Use the following npm command to install the dependency 
 	> #### npm install 
 
-* Add the `.env` file
+* Add the `.env` file in the root directory.(for more details reach out automation team)
 
 ## codeceptjs.config.js :
 
@@ -50,7 +51,7 @@ Refer the Image
   tests: process.env.TESTNAME,
   multiple: {
     parallel: {
-      chunks: 2,
+      **chunks: 2**,
       browsers: ['chromium']
     }
   }`
@@ -64,23 +65,31 @@ Refer the Image
 
 **edit .env file as per your needs**
 
-* if you want to run all test cases from the folder and file name start with
+**Execute all the test cases**
 
-**code example:**
+Example:
+
+`TESTNAME : 'Tests/ColumnFilter/*.js'`
+
+**note** :here * will be executed all the test cases inside the folder
+
+**Execute all the test cases from the folder and file name start with**
+
+Example:
 
 `TESTNAME : 'Tests/ColumnFilter/COLFIL*.js'`
- 
-**note** :here * will be executed all the files starts with COLFIL
 
-* if you want to run single test cases from the folder and file name:
+**Execute single test cases**
 
-**code example:**
+ Example:
 
 `TESTNAME: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'`
 
+**All cases with the mentioned tag should be executed**
+
 * we had set the tag name in our scenario we can also run using the tag name 
 
-**example code :**
+Example:
 
 `  Scenario('ExampleCase', async ({ I }) => {
    await I.click('//div[@id='example']')

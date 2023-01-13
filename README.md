@@ -32,3 +32,25 @@
 
 `runParallel.sh`
 >  Used to run the multiple test cases in **parallel**
+
+## codeceptjs.config.js :
+
+you can set the headless mode here
+`const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
+
+if you want to run all test cases from the folder and file name start with
+
+example :
+
+`exports.config = {
+  tests: 'Tests/ColumnFilter/COLFIL*.js'
+ }`
+here * will be executed all the files starts with COLFIL
+
+if you want to run single test cases from the folder and file name:
+example :
+
+`exports.config = {
+  tests: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'
+ }`
+

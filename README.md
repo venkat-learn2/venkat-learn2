@@ -43,7 +43,7 @@ Refer the Image
 * you can set the headless mode here
 `const isHeadless = process.env.HEADLESS === 'true'` or `process.env.HEADLESS === 'false'`
 
-* if you want change number of the chunks:
+* for parallel execution(multiple cases) change number of the chunks:
 
 Example:
 

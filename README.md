@@ -31,4 +31,4 @@
 >  Used to run the single test case at a time.
 
 `runParallel.sh`
->  Used to run the multiple test cases in **parallel **
+>  Used to run the multiple test cases in **parallel**

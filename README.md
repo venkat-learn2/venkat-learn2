@@ -24,8 +24,7 @@
 * Use the following npm command to install the dependency 
 	> #### npm install 
 
-* Add the `.env` file and `.npmrc` file . 
-
+* Add the `.env` file
 ## Execution Commands : 
 `runTest.sh`
 >  Used to run the single test case at a time.
@@ -69,6 +68,7 @@
   }`
 
 * we had set the tag name in our scenario we can also run using the tag name 
+
 **example code :**
 
 `  Scenario('ExampleCase', async ({ I }) => {

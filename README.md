@@ -51,7 +51,7 @@ Refer the Image
   tests: process.env.TESTNAME,
   multiple: {
     parallel: {
-      **chunks: 2**,
+      ***chunks: 2***,
       browsers: ['chromium']
     }
   }`

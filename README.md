@@ -10,6 +10,7 @@
 4. Reporting Tool : Allure 
 5. Logging Tool : Log4js
 6. Assertions Tool : Codecept JS Assert Library 
+7. IDE : Visual Studio Code [https://code.visualstudio.com/](url)
 
 ##  Framework Setup 
 

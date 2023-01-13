@@ -65,7 +65,7 @@ Refer the Image
 
 **edit .env file as per your needs**
 
-**Execute all the test cases**
+**1.Execute all the test cases**
 
 Example:
 
@@ -73,19 +73,19 @@ Example:
 
 **note** :here * will be executed all the test cases inside the folder
 
-**Execute all the test cases from the folder and file name start with**
+**2.Execute all the test cases from the folder and file name start with**
 
 Example:
 
 `TESTNAME : 'Tests/ColumnFilter/COLFIL*.js'`
 
-**Execute single test cases**
+**3.Execute single test cases**
 
  Example:
 
 `TESTNAME: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'`
 
-**All cases with the mentioned tag should be executed**
+**4.All cases with the mentioned tag should be executed**
 
 * we had set the tag name in our scenario we can also run using the tag name 
 

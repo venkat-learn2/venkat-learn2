@@ -40,17 +40,31 @@ you can set the headless mode here
 
 if you want to run all test cases from the folder and file name start with
 
-example :
+code example:
 
 `exports.config = {
   tests: 'Tests/ColumnFilter/COLFIL*.js'
  }`
+ 
 here * will be executed all the files starts with COLFIL
 
 if you want to run single test cases from the folder and file name:
-example :
+
+code example:
 
 `exports.config = {
   tests: 'Tests/ColumnFilter/COLFIL_01_ColumnFilter_Appears_Readingview.js'
  }`
 
+if you want change the chunks:
+
+code example:
+
+`exports.config = {
+  tests: 'Tests/ColumnFilter/COLFIL*.js',
+  multiple: {
+    parallel: {
+      chunks: 2,
+      browsers: ['chromium']
+    }
+  }`
